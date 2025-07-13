@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Website Project</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#profile-section" class="profile-link">
+                <img src="https://cdn.jsdelivr.net/gh/tabler/icons/icons/user.svg" alt="Profile" style="width:20px;height:20px;vertical-align:middle;margin-right:4px;">Profile
+            </a>
+            <a href="#cart-section" class="cart-link">
+                <img src="https://cdn.jsdelivr.net/gh/tabler/icons/icons/shopping-cart.svg" alt="Cart" style="width:20px;height:20px;vertical-align:middle;margin-right:4px;">Cart
+            </a>
+            <a href="#login-section" class="login-link">
+                <img src="https://cdn.jsdelivr.net/gh/tabler/icons/icons/user.svg" alt="Login" style="width:20px;height:20px;vertical-align:middle;margin-right:4px;">Login
+            </a>
+        </nav>
+        <div class="search-bar-container">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <button class="search-btn">Search</button>
+        </div>
+    </header>
+    <main>
+        <section class="group electronics">
+            <h2>Electronics</h2>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=300&q=80" alt="Phone" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Smartphone</h3>
+                    <p class="card-desc">Latest model with advanced features.</p>
+                    <button class="button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=300&q=80" alt="Laptop" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Laptop</h3>
+                    <p class="card-desc">High performance for work and play.</p>
+                    <button class="button">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="group books">
+            <h2>Books</h2>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=300&q=80" alt="Book" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Novel</h3>
+                    <p class="card-desc">A thrilling adventure story.</p>
+                    <button class="button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=300&q=80" alt="Cookbook" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Cookbook</h3>
+                    <p class="card-desc">Delicious recipes for every occasion.</p>
+                    <button class="button">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="group clothing">
+            <h2>Clothing</h2>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=300&q=80" alt="Shirt" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">T-Shirt</h3>
+                    <p class="card-desc">Comfortable and stylish cotton t-shirt.</p>
+                    <button class="button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=300&q=80" alt="Jacket" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Jacket</h3>
+                    <p class="card-desc">Warm and trendy for all seasons.</p>
+                    <button class="button">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="profile-section" id="profile-section">
+            <h2><img src="https://cdn.jsdelivr.net/gh/tabler/icons/icons/user.svg" alt="Profile" style="width:20px;height:20px;vertical-align:middle;margin-right:4px;">Profile</h2>
+            <p>Welcome, Guest! (Add profile details here)</p>
+        </section>
+        <section class="cart-section" id="cart-section">
+            <h2><img src="https://cdn.jsdelivr.net/gh/tabler/icons/icons/shopping-cart.svg" alt="Cart" style="width:20px;height:20px;vertical-align:middle;margin-right:4px;">Your Cart</h2>
+            <ul id="cartList"></ul>
+        </section>
+        <section class="login-section" id="login-section">
+            <h2><img src="https://cdn.jsdelivr.net/gh/tabler/icons/icons/user.svg" alt="Login" style="width:20px;height:20px;vertical-align:middle;margin-right:4px;">Login</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" class="button">Login</button>
+            </form>
+        </section>
+        <section class="newsletter-section" id="newsletter-section">
+            <h2><img src="https://cdn.jsdelivr.net/gh/tabler/icons/icons/mail.svg" alt="Newsletter" style="width:20px;height:20px;vertical-align:middle;margin-right:4px;">Subscribe to our Newsletter</h2>
+            <form id="newsletterForm">
+                <input type="email" id="newsletterEmail" placeholder="Your email" required>
+                <button type="submit" class="button">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Website Project</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/search.js"></script>
+</body>
+</html>
